@@ -34,13 +34,11 @@
               Our Produces
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#product">Fruits</a></li>
-              <li>
-                <a class="dropdown-item" href="#product">Vegetables</a>
-              </li>
-              <li><a class="dropdown-item" href="#product">Grains</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li><a class="dropdown-item" href="#product">More +</a></li>
+                <li><a class="dropdown-item" href="#product">Vegetables</a></li>
+                <li><a class="dropdown-item" href="#product">Fruits</a></li>
+                <li><a class="dropdown-item" href="#product">Grains</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#product">More +</a></li>
             </ul>
           </li>
 
@@ -65,10 +63,9 @@
       <!-- Control buttons -->
       <div class="container" id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('vegetables')">Vegetables</button>
         <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
-        <button class="btn" onclick="filterSelection('vegetables')">
-          Vegetables
-        </button>
+        
         <button class="btn" onclick="filterSelection('grains')">Grains</button>
       </div>
 
@@ -76,32 +73,51 @@
       <div class="container" id="container-filter">
         <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
           <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg?quality=90&webp=true&resize=375,341" height="200" width="300" alt="oranges-img"/>
-        <p class="text-dark"> Oranges</p>
+        <p class="text-dark p-2"> Oranges</p>
+        <!-- <p class="text-dark p-2">Oranges are tangy citrus fruits rich in vitamin C and known for their versatility. They can be enjoyed fresh, juiced, or used in various dishes, providing a refreshing flavor and numerous health benefits.</p> -->
+        <p class="text-dark text-start p-2">Oranges are citrus fruits known for their refreshing and tangy flavor. Packed with vitamin C and other essential nutrients, they are a healthy and delicious addition to any diet.</p>
           <div class="card-body">
             <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
           </div>
         </div>
         <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
             <img class="card-img-top" src="https://www.thespruce.com/thmb/rmlXUH96NF1DPe1UJV6vsvdFZUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lemon-tree-plant-profile-4846327-3-b9b35325794c465f962a5f472bc8a6b2.jpg" height="200" width="300" alt="sweet lemon"/>
-            <p class="text-dark"> Sweet Lemon</p>
+            <p class="text-dark p-2"> Sweet Lemon</p>
+            <!-- <p class="text-dark p-2">Sweet Lemon, also known as Citrus limetta, is a citrus fruit that is characterized by its mild and sweet flavor. It resembles a lemon in appearance but has a sweeter taste, making it a popular choice for those who prefer less acidity. Sweet Lemons are packed with vitamin C, essential oils, and antioxidants, offering not only a delightful flavor but also potential health benefits.</p> -->
+            <p class="text-dark text-start p-2">Sweet Lemon, also known as Citrus limetta, is a citrus fruit with a mild and sweet flavor, making it a delightful alternative to regular lemons. It is rich in vitamin C and antioxidants, offering potential health benefits along with its pleasant taste.</p>
             <div class="card-body">
                 <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
             </div>
         </div>
         <div class="filterDiv grains card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
             <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/330px-Vehn%C3%A4pelto_6.jpg" height="200" width="300" alt="wheat-img"/>
-            <p class="text-dark"> Wheat</p>
+            <p class="text-dark p-1"> Wheat</p>
+            <!-- <p class="text-dark p-2">Wheat is a versatile cereal grain widely cultivated and consumed around the world. It is a staple food in many cultures and serves as a primary ingredient in various products such as bread, pasta, and pastries. Wheat is rich in carbohydrates, fiber, and some essential nutrients, making it an important source of energy and nutrition for many people.</p> -->
+            <p class="text-dark text-start p-2">Wheat is a widely cultivated cereal grain that serves as a staple food in many parts of the world. It is a versatile ingredient used in various food products, providing a source of carbohydrates, dietary fiber, and some essential nutrients.</p>
             <div class="card-body">
                 <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
             </div>
         </div>
         <div class="filterDiv vegetables card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <img class="card-img-top" src="https://img.freepik.com/free-photo/healthy-vegetables-wooden-table_1150-38014.jpg?size=626&ext=jpg" height="200" width="300" alt="vegetables-img"/> 
-            <p class="text-dark"> Vegetables</p>
+            <img class="card-img-top" src="https://pbs.twimg.com/profile_images/507749358364676098/AXgb_nZv_400x400.jpeg" height="200" width="300" alt="vegetables-img"/> 
+            <p class="text-dark p-1"> Spinach</p>
+            <!-- <p class="text-dark p-2">Vegetables are nutrient-rich plant-based foods that are essential for a balanced and healthy diet. They come in a wide variety of shapes, colors, and flavors, offering an abundance of vitamins, minerals, and dietary fiber. Incorporating vegetables into meals can help promote overall health, support digestion, boost immunity, and contribute to weight management.</p> -->
+            <p class="text-dark text-start p-2">Spinach is a nutrient-dense leafy green vegetable that is packed with vitamins, minerals, and antioxidants, offering numerous health benefits.</p>
             <div class="card-body">
                 <a class="btn btn-primary btn-lg buy-now"> Not Available</a>
             </div>
         </div>
+
+        <div class="filterDiv vegetables card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/10/2018/02/e0f2e690-693d-4539-a203-e5868d04309a-86ece10.jpg?quality=90&resize=940,627" height="200" width="300" alt="vegetables-img"/> 
+            <p class="text-dark p-1"> Coriander</p>
+            <!-- <p class="text-dark p-2">Vegetables are nutrient-rich plant-based foods that are essential for a balanced and healthy diet. They come in a wide variety of shapes, colors, and flavors, offering an abundance of vitamins, minerals, and dietary fiber. Incorporating vegetables into meals can help promote overall health, support digestion, boost immunity, and contribute to weight management.</p> -->
+            <p class="text-dark text-start p-2">Coriander, also known as cilantro, is a versatile herb with a distinct flavor that adds a refreshing and citrusy note to various cuisines, while also providing potential health benefits.</p>
+            <div class="card-body">
+                <a class="btn btn-primary btn-lg buy-now"> Not Available</a>
+            </div>
+        </div>
+
       </div>
     </section>
 
@@ -109,6 +125,7 @@
       <div class="container" id="container-about">
         <h1>About</h1>
         <br>
+        Welcome to our website dedicated to the cultivation of high-quality fruits and vegetables. We specialize in growing a diverse range of fresh produce, including a variety of fruits and vegetables. Our commitment to sustainable and organic practices ensures that our crops are healthy, nutritious, and free from harmful chemicals. Explore our website to learn more about our farming methods, browse our selection of seasonal produce, and discover the benefits of incorporating fresh fruits and vegetables into your diet.
       </div>
     </section>
 
@@ -122,16 +139,16 @@
             method="POST">
                 <div class="mb-3 col-10">
                     <label for="exampleInputName" class="form-label">Name</label>
-                    <input name="Name" type="text" class="form-control" id="exampleInputName" requird>
+                    <input name="Name" type="text" class="form-control" id="exampleInputName">
                   </div>
                 <div class="mb-3 col-10">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" requird>
+                  <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3 col-10">
                   <label for="exampleInputTextArea" class="form-label">Message</label>
-                  <textarea name="Message" type="text" class="form-control" id="exampleInputTextArea" rows="2" requird></textarea>
+                  <textarea name="Message" type="text" class="form-control" id="exampleInputTextArea" rows="2"></textarea>
                 </div>
                 
                 <button type="submit" class="btn btn-primary form-btn">Submit</button>
@@ -159,6 +176,10 @@
             </div>
         </div>
     </section>
+
+    <div class="bg-black text-end top">
+        <a class="btn btn-primary border-0 text-light bg-black" href="./index.html"><i class="bi bi-arrow-up"></i> Back to top</a>
+    </div>
 
 
     <script
