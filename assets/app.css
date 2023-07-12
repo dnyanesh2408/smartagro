@@ -32,13 +32,20 @@ body, html{
 @media(max-width: 576px){
     .nav-link{
         /* font-size: 16px; */
-        font-size: 14px;
-        padding: 0.6rem;
+        /* font-size: 14px; */
+        font-size: 13px;
+        /* padding: 0.6rem; */
+        padding: 0.5rem;
         margin: 0.5rem;
+        margin-left: -0.1rem;
+        font-weight: bold;
     }
 }
 .nav-contact{
     color: aliceblue;
+}
+.nav-contact:hover{
+    color: gray !important;
 }
 a{
     text-decoration: none;
@@ -54,6 +61,14 @@ a{
        width: 90%; 
     }
 }
+.dropdown-menu.show{
+    background-color: rgb(247, 242, 236);
+}
+@media(max-width:576px){
+    .dropdown-item{
+        font-size: small;
+    }
+}
 section{
     padding: 200px 4%;
 }
@@ -67,6 +82,9 @@ section{
 .hero-content h1{
     font-size: 50px;
     color: #fff;
+}
+#product{
+    margin-bottom: 0;
 }
 .buy-now{
     padding: 0.8rem !important;
@@ -158,9 +176,37 @@ section{
   #footer{
     background-color: #000;
     color: #ddd;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 .footer-content a{
-    color: mediumturquoise;
+    /* color: mediumturquoise; */
+    color: gray;
+}
+#credit{
+    font-size: 21px;
+}
+#container-contact{
+    width: 60%;
+}
+@media(max-width: 576px){
+    #container-contact{
+        width: 94%;
+    }
+}
+
+.form-control{
+    background-color: rgb(247, 242, 236);
+    border: 1px solid #6969694e;
+}
+.form-btn{
+    color: #000;
+    border: 1px solid #6969699e;
+}
+.form-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+#privacy{
+    margin-top: 0.8rem;
 }
