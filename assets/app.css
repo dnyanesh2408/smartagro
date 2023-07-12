@@ -7,6 +7,9 @@ body, html{
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
+p{
+    line-height: normal;
+}
 .navbar-brand{
     font-size: 32px;
 }
@@ -50,6 +53,16 @@ body, html{
 a{
     text-decoration: none;
 }
+#about{
+    background-color: #000;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#contact{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 #container-hero, #container-about{
     width: 60%;
 }
@@ -70,7 +83,7 @@ a{
     }
 }
 section{
-    padding: 200px 4%;
+    padding: 200px 2%;
 }
 #hero{
     /* background-color: red; */
@@ -209,4 +222,10 @@ section{
 }
 #privacy{
     margin-top: 0.8rem;
+}
+.top a{
+    font-size: small;
+}
+.top a:hover{
+    border-bottom: 1px solid gray !important;
 }
