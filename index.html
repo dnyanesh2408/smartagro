@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Agro - Fresh Food</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/app.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg p-2 shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">Smart <span>Agro</span> </a>
+
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Our Produces
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#filter-btn-2">Fruits</a></li>
+              <li>
+                <a class="dropdown-item" href="#filter-btn-2">Vegetables</a>
+              </li>
+              <li><a class="dropdown-item" href="#filter-btn-2">Grains</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#filter-btn-2">More +</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn btn-lg bg-dark nav-contact" href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="container" id="container-hero">
+        <div class="hero-content">
+          <h1>We grow fresh food for your need and health.</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="filter-section">
+      <!-- Control buttons -->
+      <div class="container" id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
+        <button class="btn" onclick="filterSelection('vegetables')">
+          Vegetables
+        </button>
+        <button class="btn" onclick="filterSelection('grains')">Grains</button>
+
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+      </div>
+
+      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+      <div class="container" id="container-filter">
+        <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+          <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg?quality=90&webp=true&resize=375,341" height="200" width="300" alt="oranges-img"/>
+        <p class="text-dark"> Oranges</p>
+          <div class="card-body">
+            <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
+          </div>
+        </div>
+        <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <img class="card-img-top" src="https://www.thespruce.com/thmb/rmlXUH96NF1DPe1UJV6vsvdFZUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lemon-tree-plant-profile-4846327-3-b9b35325794c465f962a5f472bc8a6b2.jpg" height="200" width="300" alt="sweet lemon"/>
+            <p class="text-dark"> Sweet Lemon</p>
+            <div class="card-body">
+                <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
+            </div>
+        </div>
+        <div class="filterDiv grains card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/330px-Vehn%C3%A4pelto_6.jpg" height="200" width="300" alt="wheat-img"/>
+            <p class="text-dark"> Wheat</p>
+            <div class="card-body">
+                <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
+            </div>
+        </div>
+        <div class="filterDiv vegetables card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <img class="card-img-top" src="https://img.freepik.com/free-photo/healthy-vegetables-wooden-table_1150-38014.jpg?size=626&ext=jpg" height="200" width="300" alt="vegetables-img"/> 
+            <p class="text-dark"> Vegetables</p>
+            <div class="card-body">
+                <a class="btn btn-primary btn-lg buy-now"> Not Available</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container" id="container-about">
+        <h1>About</h1>
+      </div>
+    </section>
+
+    <section id="footer">
+        <div class="container" id="container-footer">
+            <div class="footer-content">
+                <p>&copy; 2023 Smart Agro.</p>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/app.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
