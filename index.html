@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg p-2 shadow-lg">
+    <nav class="navbar navbar-expand-lg p-3 shadow-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">Smart<span>Agro</span> </a>
 
@@ -24,15 +24,7 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Our Produces
-            </a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Produces</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#product">Vegetables</a></li>
                 <li><a class="dropdown-item" href="#product">Fruits</a></li>
@@ -42,8 +34,20 @@
             </ul>
           </li>
 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle cart" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-cart"></i> Cart (0)</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><i class="bi bi-person-add"></i> Register</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-in-right"></i> Login</a></li>
+            </ul>
+          </li>
+
+          <!-- <li class="nav-item">
+            <a class="nav-link cart" aria-current="page" href="#"><i class="bi bi-cart"></i> Cart (0)</a>
+          </li> -->
+
           <li class="nav-item">
-            <a class="nav-link btn btn-lg bg-dark nav-contact" href="#contact"
+            <a class="nav-link btn btn-primary btn-sm nav-contact" href="#contact"
               >Contact</a
             >
           </li>
@@ -61,61 +65,89 @@
 
     <section id="product">
       <!-- Control buttons -->
-      <div class="container" id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')">All</button>
+      <div class="container text-center" id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">All <i class="bi bi-check-all"></i></button>
         <button class="btn" onclick="filterSelection('vegetables')">Vegetables</button>
         <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
-        
         <button class="btn" onclick="filterSelection('grains')">Grains</button>
+        <button class="btn" onclick="filterSelection('other')">Others +</button>
       </div>
 
-      <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
       <div class="container" id="container-filter">
-        <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-          <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg?quality=90&webp=true&resize=375,341" height="200" width="300" alt="oranges-img"/>
-        <p class="text-dark p-2"> Oranges</p>
-        <!-- <p class="text-dark p-2">Oranges are tangy citrus fruits rich in vitamin C and known for their versatility. They can be enjoyed fresh, juiced, or used in various dishes, providing a refreshing flavor and numerous health benefits.</p> -->
-        <p class="text-dark text-start p-2">Oranges are citrus fruits known for their refreshing and tangy flavor. Packed with vitamin C and other essential nutrients, they are a healthy and delicious addition to any diet.</p>
-          <div class="card-body">
-            <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
+        <div class="row">
+
+          <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <div class="card-body">
+              <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg?quality=90&webp=true&resize=375,341" height="200" width="300" alt="oranges-img"/>
+              <p class="text-dark p-1">Oranges (संत्री)</p>
+              <p class="text-dark text-start p-1">Oranges are juicy citrus fruits packed with vitamin C.</p>
+              <p class="p-5"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
+            </div>
           </div>
-        </div>
-        <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <img class="card-img-top" src="https://www.thespruce.com/thmb/rmlXUH96NF1DPe1UJV6vsvdFZUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lemon-tree-plant-profile-4846327-3-b9b35325794c465f962a5f472bc8a6b2.jpg" height="200" width="300" alt="sweet lemon"/>
-            <p class="text-dark p-2"> Sweet Lemon</p>
-            <!-- <p class="text-dark p-2">Sweet Lemon, also known as Citrus limetta, is a citrus fruit that is characterized by its mild and sweet flavor. It resembles a lemon in appearance but has a sweeter taste, making it a popular choice for those who prefer less acidity. Sweet Lemons are packed with vitamin C, essential oils, and antioxidants, offering not only a delightful flavor but also potential health benefits.</p> -->
-            <p class="text-dark text-start p-2">Sweet Lemon, also known as Citrus limetta, is a citrus fruit with a mild and sweet flavor, making it a delightful alternative to regular lemons. It is rich in vitamin C and antioxidants, offering potential health benefits along with its pleasant taste.</p>
+
+          <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
             <div class="card-body">
-                <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
+              <img class="card-img-top" src="https://www.thespruce.com/thmb/rmlXUH96NF1DPe1UJV6vsvdFZUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lemon-tree-plant-profile-4846327-3-b9b35325794c465f962a5f472bc8a6b2.jpg" height="200" width="300" alt="oranges-img"/>
+              <p class="text-dark p-1">Sweet Lemon (मोसंबी)</p>
+              <p class="text-dark text-start p-1">Sweet lemon is a citrus fruit with a mild and sweet flavor, resembling a cross between a lemon and an orange.</p>
+              <p class="p-2"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
             </div>
-        </div>
-        <div class="filterDiv grains card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/330px-Vehn%C3%A4pelto_6.jpg" height="200" width="300" alt="wheat-img"/>
-            <p class="text-dark p-1"> Wheat</p>
-            <!-- <p class="text-dark p-2">Wheat is a versatile cereal grain widely cultivated and consumed around the world. It is a staple food in many cultures and serves as a primary ingredient in various products such as bread, pasta, and pastries. Wheat is rich in carbohydrates, fiber, and some essential nutrients, making it an important source of energy and nutrition for many people.</p> -->
-            <p class="text-dark text-start p-2">Wheat is a widely cultivated cereal grain that serves as a staple food in many parts of the world. It is a versatile ingredient used in various food products, providing a source of carbohydrates, dietary fiber, and some essential nutrients.</p>
+          </div>
+
+          <div class="filterDiv grains card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
             <div class="card-body">
-                <a class="btn btn-primary btn-lg buy-now"> Buy Now</a>
+              <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/330px-Vehn%C3%A4pelto_6.jpg" height="200" width="300" alt="oranges-img"/>
+              <p class="text-dark p-1">Wheat (गहू)</p>
+              <p class="text-dark text-start p-1">Wheat is a widely cultivated cereal grain used for a variety of food products.</p>
+              <p class="p-4"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
             </div>
-        </div>
-        <div class="filterDiv vegetables card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <img class="card-img-top" src="https://pbs.twimg.com/profile_images/507749358364676098/AXgb_nZv_400x400.jpeg" height="200" width="300" alt="vegetables-img"/> 
-            <p class="text-dark p-1"> Spinach</p>
-            <!-- <p class="text-dark p-2">Vegetables are nutrient-rich plant-based foods that are essential for a balanced and healthy diet. They come in a wide variety of shapes, colors, and flavors, offering an abundance of vitamins, minerals, and dietary fiber. Incorporating vegetables into meals can help promote overall health, support digestion, boost immunity, and contribute to weight management.</p> -->
-            <p class="text-dark text-start p-2">Spinach is a nutrient-dense leafy green vegetable that is packed with vitamins, minerals, and antioxidants, offering numerous health benefits.</p>
-            <div class="card-body">
-                <a class="btn btn-primary btn-lg buy-now"> Not Available</a>
-            </div>
+          </div>
+
         </div>
 
-        <div class="filterDiv vegetables card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/10/2018/02/e0f2e690-693d-4539-a203-e5868d04309a-86ece10.jpg?quality=90&resize=940,627" height="200" width="300" alt="vegetables-img"/> 
-            <p class="text-dark p-1"> Coriander</p>
-            <!-- <p class="text-dark p-2">Vegetables are nutrient-rich plant-based foods that are essential for a balanced and healthy diet. They come in a wide variety of shapes, colors, and flavors, offering an abundance of vitamins, minerals, and dietary fiber. Incorporating vegetables into meals can help promote overall health, support digestion, boost immunity, and contribute to weight management.</p> -->
-            <p class="text-dark text-start p-2">Coriander, also known as cilantro, is a versatile herb with a distinct flavor that adds a refreshing and citrusy note to various cuisines, while also providing potential health benefits.</p>
+        <div class="row">
+
+          <div class="filterDiv vegetabless card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
             <div class="card-body">
-                <a class="btn btn-primary btn-lg buy-now"> Not Available</a>
+              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzuk65fCUAkKs_3rG5sItzyRoxeKdQLHkbvg&usqp=CAU" height="200" width="300" alt="oranges-img"/>
+              <p class="text-dark p-1">Spinach (पालक )</p>
+              <p class="text-dark text-start p-1">Spinach is a nutrient-dense leafy green vegetable that is packed with vitamins, minerals, and antioxidants, offering numerous health benefits.</p>
+              <p class="p-2"><a class="btn btn-primary btn-lg buy-now">Not Available</a></p>
             </div>
+          </div>
+
+
+          <div class="filterDiv vegetables card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <div class="card-body">
+              <img class="card-img-top" src="https://nationaltoday.com/wp-content/uploads/2021/10/i-hate-coriander-day.jpg" height="200" width="300" alt="oranges-img"/>
+              <p class="text-dark p-1">Coriander (कोथींबीर )</p>
+              <p class="text-dark text-start p-1">Cilantro, also known as coriander, is a pungent herb widely used in culinary dishes for its distinctive flavor and aroma.</p>
+              <p class="p-4"><a class="btn btn-primary btn-lg buy-now">Not Available</a></p>
+            </div>
+          </div>
+
+          <div class="filterDiv grains card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <div class="card-body">
+              <img class="card-img-top" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/03/corn-cob-field-1296x728-header.jpg?w=1155&h=1528" height="200" width="300" alt="oranges-img"/>
+              <p class="text-dark p-1">Corn (मका )</p>
+              <p class="text-dark text-start p-1">Corn, scientifically known as Zea mays, is a versatile cereal crop widely cultivated for its edible kernels and various industrial applications.</p>
+              <p class="p-2"><a class="btn btn-primary btn-lg buy-now"><i class="bi bi-bag"></i> Not Available</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="filterDiv other card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
+            <div class="card-body">
+              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK6bK-Gbx6WIIBDM0aKusH9972QkpYdLTaKB5jgsZQ8J3YqWBAsBu9PUUjharlZvILKRw&usqp=CAU" height="200" width="300" alt="oranges-img"/>
+              <p class="text-dark p-1">Cotton (कपास)</p>
+              <p class="text-dark text-start p-1">Cotton is a soft, fluffy fiber derived from the cotton plant and is commonly used to make textiles and clothing.</p>
+              <p class="p-2"><a class="btn btn-primary btn-lg buy-now">Not Available</a></p>
+            </div>
+          </div>
+
         </div>
 
       </div>
@@ -160,7 +192,7 @@
     <section id="footer">
         <div class="container" id="container-footer">
             <div class="footer-content">
-                <p id="credit">&copy;2023 Smart<span style="color: mediumseagreen;">Agro</span></p>
+                <p id="credit">&copy;2023 Smart<span style="color: mediumseagreen; font-weight: bold;">Agro</span></p>
                 <div class="row">
                     <div class="col-sm-4">
                         Follow Us:
