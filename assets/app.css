@@ -93,11 +93,11 @@ section{
     /* padding: 200px 2%; */
     padding: 200px 6%;
 }
-@media(max-width: 576px){
+/* @media(max-width: 576px){
     .row {
         --bs-gutter-x: 0;
     }
-}
+} */
 #hero{
     /* background-color: red; */
     /* background-image: url('https://cdn.pixabay.com/photo/2017/03/09/07/21/leaf-2128642_1280.jpg'); */
@@ -129,8 +129,6 @@ section{
     background-color: mediumseagreen !important;
     transition: all 0.3s ease-in-out;
 }
-
-
 .container {
     overflow: hidden;
   }
@@ -193,7 +191,6 @@ section{
         width: 94%;
     }
   }
-
   .card{
     background-color: rgb(246, 244, 241) !important;
     border-radius: 1.5rem;
