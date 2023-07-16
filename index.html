@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Smart Agro - Fresh Food</title>
+    <title>Smart Agro - Fresh Food - login-signup</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,13 +15,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg p-3 shadow-lg" data-aos="fade-right">
+    <nav class="navbar navbar-expand-lg p-3 shadow-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">Smart<span>Agro</span> </a>
+        <a class="navbar-brand" href="./index.html">Smart<span>Agro</span> 
+        </a>
+        
 
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#about">About</a>
           </li>
 
           <li class="nav-item dropdown">
@@ -30,7 +36,7 @@
                 <li><a class="dropdown-item" href="#product">Vegetables</a></li>
                 <li><a class="dropdown-item" href="#product">Fruits</a></li>
                 <li><a class="dropdown-item" href="#product">Grains</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li><hr class="dropdown-divider"/></li>
                 <li><a class="dropdown-item" href="#product">More +</a></li>
             </ul>
           </li>
@@ -43,178 +49,187 @@
             </ul>
           </li>
 
-          <!-- <li class="nav-item">
-            <a class="nav-link cart" aria-current="page" href="#"><i class="bi bi-cart"></i> Cart (0)</a>
-          </li> -->
-
           <li class="nav-item">
-            <a class="nav-link btn btn-primary btn-sm nav-contact" href="#contact"
-              >Contact</a
-            >
+            <a class="nav-link btn btn-primary btn-sm nav-contact" href="./index.html#contact">Contact
+            </a>
           </li>
         </ul>
       </div>
     </nav>
 
+
+
     <section id="hero">
-      <div class="container" id="container-hero">
-        <div class="hero-content" data-aos="fade-left">
-          <h1>We grow fresh food for your need and health.</h1>
+        <div class="container" id="container-width" data-aos="zoom-in">
+          <div class="hero-content" data-aos="fade-left">
+            <h1>We grow fresh food for your need and health.</h1>
+          </div>
         </div>
-      </div>
     </section>
 
     <section id="product">
-      <!-- Control buttons -->
-      <div class="container text-center" id="myBtnContainer" data-aos="zoom-in">
-        <button class="btn active" onclick="filterSelection('all')">All <i class="bi bi-check-all"></i></button>
-        <button class="btn" onclick="filterSelection('vegetables')">Vegetables</button>
-        <button class="btn" onclick="filterSelection('fruits')">Fruits</button>
-        <button class="btn" onclick="filterSelection('grains')">Grains</button>
-        <button class="btn" onclick="filterSelection('other')">Others +</button>
-      </div>
+      <div class="container" id="container-width">
 
-      <div class="container" id="container-filter">
-        <div class="row" data-aos="zoom-in">
+        
+          <div class="text-center" id="myBtnContainer">
+            <!-- Control buttons -->
+            <button class="btn active btn-filter-color" onclick="filterSelection('all')">All <i class="bi bi-check-all"></i></button>
+            <button class="btn btn-filter-color" onclick="filterSelection('vegetables')">Vegetables</button>
+            <button class="btn btn-filter-color" onclick="filterSelection('fruits')">Fruits</button>
+            <button class="btn btn-filter-color" onclick="filterSelection('grains')">Grains</button>
+            <button class="btn btn-filter-color" onclick="filterSelection('other')">Others +</button>
+          </div>
 
-          <div class="col">
-            <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-              <div class="card-body">
-                <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg?quality=90&webp=true&resize=375,341" height="200" width="300" alt="oranges-img"/>
-                <p class="text-dark p-1">Oranges (संत्री)</p>
-                <p class="text-dark text-start p-1">Oranges are juicy citrus fruits packed with vitamin C.</p>
-                <p class="p-5"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
+          <div class="row">
+
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="filterDiv fruits card">
+                <div class="text-center p-2">
+                  <img src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg?quality=90&webp=true&resize=375,341" class="card-img-top text-center" alt="product-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Oranges (संत्री)</h5>
+                  <p class="card-text">Oranges are juicy citrus fruits packed with vitamin C.</p>
+                  <p class="text-center p-2"><a href="#" class="btn btn-primary buy-now"><i class="bi bi-bag"></i> Not Available -- <i class="bi bi-currency-rupee"></i></a></p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col">
-            <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-              <div class="card-body">
-                <img class="card-img-top" src="https://www.thespruce.com/thmb/rmlXUH96NF1DPe1UJV6vsvdFZUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lemon-tree-plant-profile-4846327-3-b9b35325794c465f962a5f472bc8a6b2.jpg" height="200" width="300" alt="oranges-img"/>
-                <p class="text-dark p-1">Sweet Lemon (मोसंबी)</p>
-                <p class="text-dark text-start p-1">Sweet lemon is a citrus fruit with a mild and sweet flavor, resembling a cross between a lemon and an orange.</p>
-                <p class="p-2"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="filterDiv fruits card">
+                <div class="text-center p-2">
+                  <img src="https://www.thespruce.com/thmb/rmlXUH96NF1DPe1UJV6vsvdFZUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lemon-tree-plant-profile-4846327-3-b9b35325794c465f962a5f472bc8a6b2.jpg" class="card-img-top text-center" alt="product-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Sweet Lemon (मोसंबी)</h5>
+                  <p class="card-text">Sweet lemon is a citrus fruit with a mild and sweet flavor, resembling a cross between a lemon and an orange.</p>
+                  <p class="text-center"><a href="#" class="btn btn-primary buy-now"><i class="bi bi-bag"></i> Not Available -- <i class="bi bi-currency-rupee"></i></a></p>
+                </div>
               </div>
             </div>
+
           </div>
 
-          <!-- <div class="filterDiv fruits card m-2" style="background-color: rgb(247, 242, 236)">
-            <div class="card-body">
-              <img class="card-img-top" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg?quality=90&webp=true&resize=375,341" height="200" width="300" alt="oranges-img"/>
-              <p class="text-dark p-1">Oranges (संत्री)</p>
-              <p class="text-dark text-start p-1">Oranges are juicy citrus fruits packed with vitamin C.</p>
-              <p class="p-5"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
+          <div class="row">
+
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="filterDiv grains card">
+                <div class="text-center p-2">
+                  <img src="https://ik.imagekit.io/dk23/My_Images/dk-nature-img-8.jpg?updatedAt=1681722602172" class="card-img-top text-center" alt="product-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Wheat (गहू)</h5>
+                  <p class="card-text">Wheat is a cereal grain widely cultivated for its edible seeds and used to make various food products worldwide.</p>
+                  <p class="text-center p-4"><a href="#" class="btn btn-primary buy-now"><i class="bi bi-bag"></i> Not Available -- <i class="bi bi-currency-rupee"></i></a></p>
+                </div>
+              </div>
             </div>
-          </div> -->
 
-          <!-- <div class="filterDiv fruits card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <div class="card-body">
-              <img class="card-img-top" src="https://www.thespruce.com/thmb/rmlXUH96NF1DPe1UJV6vsvdFZUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lemon-tree-plant-profile-4846327-3-b9b35325794c465f962a5f472bc8a6b2.jpg" height="200" width="300" alt="oranges-img"/>
-              <p class="text-dark p-1">Sweet Lemon (मोसंबी)</p>
-              <p class="text-dark text-start p-1">Sweet lemon is a citrus fruit with a mild and sweet flavor, resembling a cross between a lemon and an orange.</p>
-              <p class="p-2"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="filterDiv grains card">
+                <div class="text-center p-2">
+                  <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/03/corn-cob-field-1296x728-header.jpg?w=1155&h=1528" class="card-img-top text-center" alt="product-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Corn (मका) </h5>
+                  <p class="card-text">Wheat is a cereal grain widely cultivated for its edible seeds and used to make various food products worldwide.</p>
+                  <p class="text-center p-4"><a href="#" class="btn btn-primary buy-now"><i class="bi bi-bag"></i> Not Available -- <i class="bi bi-currency-rupee"></i></a></p>
+                </div>
+              </div>
             </div>
-          </div> -->
-
-          <!-- <div class="filterDiv grains card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <div class="card-body">
-              <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/330px-Vehn%C3%A4pelto_6.jpg" height="200" width="300" alt="oranges-img"/>
-              <p class="text-dark p-1">Wheat (गहू)</p>
-              <p class="text-dark text-start p-1">Wheat is a widely cultivated cereal grain used for a variety of food products.</p>
-              <p class="p-4"><a class="btn btn-primary btn-lg buy-now"> Not Available</a></p>
-            </div>
-          </div> -->
-
-        </div>
-
-        <div class="row">
-
-          <div class="filterDiv vegetabless card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <div class="card-body">
-              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzuk65fCUAkKs_3rG5sItzyRoxeKdQLHkbvg&usqp=CAU" height="200" width="300" alt="oranges-img"/>
-              <p class="text-dark p-1">Spinach (पालक )</p>
-              <p class="text-dark text-start p-1">Spinach is a nutrient-dense leafy green vegetable that is packed with vitamins, minerals, and antioxidants, offering numerous health benefits.</p>
-              <p class="p-2"><a class="btn btn-primary btn-lg buy-now">Not Available</a></p>
-            </div>
+                        
           </div>
 
+          <div class="row">
 
-          <div class="filterDiv vegetables card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <div class="card-body">
-              <img class="card-img-top" src="https://nationaltoday.com/wp-content/uploads/2021/10/i-hate-coriander-day.jpg" height="200" width="300" alt="oranges-img"/>
-              <p class="text-dark p-1">Coriander (कोथींबीर )</p>
-              <p class="text-dark text-start p-1">Cilantro, also known as coriander, is a pungent herb widely used in culinary dishes for its distinctive flavor and aroma.</p>
-              <p class="p-4"><a class="btn btn-primary btn-lg buy-now">Not Available</a></p>
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="filterDiv vegetables card">
+                <div class="text-center p-2">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzuk65fCUAkKs_3rG5sItzyRoxeKdQLHkbvg&usqp=CAU" class="card-img-top text-center" alt="product-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Spinach (पालक)</h5>
+                  <p class="card-text">Spinach is a nutrient-dense leafy green vegetable that is packed with vitamins, minerals, and antioxidants, offering numerous health benefits.</p>
+                  <p class="text-center p-4"><a href="#" class="btn btn-primary buy-now"><i class="bi bi-bag"></i> Not Available -- <i class="bi bi-currency-rupee"></i></a></p>
+                </div>
+              </div>
             </div>
+
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="filterDiv vegetables card">
+                <div class="text-center p-2">
+                  <img src="https://nationaltoday.com/wp-content/uploads/2021/10/i-hate-coriander-day.jpg" class="card-img-top text-center" alt="product-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Coriander (कोथींबीर) </h5>
+                  <p class="card-text">Cilantro, also known as coriander, is a pungent herb widely used in culinary dishes for its distinctive flavor and aroma.</p>
+                  <p class="text-center p-4"><a href="#" class="btn btn-primary buy-now"><i class="bi bi-bag"></i> Not Available -- <i class="bi bi-currency-rupee"></i></a></p>
+                </div>
+              </div>
+            </div>
+                        
           </div>
 
-          <div class="filterDiv grains card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <div class="card-body">
-              <img class="card-img-top" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/03/corn-cob-field-1296x728-header.jpg?w=1155&h=1528" height="200" width="300" alt="oranges-img"/>
-              <p class="text-dark p-1">Corn (मका )</p>
-              <p class="text-dark text-start p-1">Corn, scientifically known as Zea mays, is a versatile cereal crop widely cultivated for its edible kernels and various industrial applications.</p>
-              <p class="p-2"><a class="btn btn-primary btn-lg buy-now"><i class="bi bi-bag"></i> Not Available</a> <span class="rupee">-- <i class="bi bi-currency-rupee"></i></span></p>
+          <div class="row">
+
+            <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="filterDiv other card">
+                <div class="text-center p-2">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK6bK-Gbx6WIIBDM0aKusH9972QkpYdLTaKB5jgsZQ8J3YqWBAsBu9PUUjharlZvILKRw&usqp=CAU" class="card-img-top text-center" alt="product-img">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Cotton (कपास)</h5>
+                  <p class="card-text">Cotton is a soft, fluffy fiber derived from the cotton plant and is commonly used to make textiles and clothing.</p>
+                  <p class="text-center p-4"><a href="#" class="btn btn-primary buy-now"><i class="bi bi-bag"></i> Not Available -- <i class="bi bi-currency-rupee"></i></a></p>
+                </div>
+              </div>
             </div>
+            
           </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="filterDiv other card m-2" style="width: 18rem; background-color: rgb(247, 242, 236)">
-            <div class="card-body">
-              <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK6bK-Gbx6WIIBDM0aKusH9972QkpYdLTaKB5jgsZQ8J3YqWBAsBu9PUUjharlZvILKRw&usqp=CAU" height="200" width="300" alt="oranges-img"/>
-              <p class="text-dark p-1">Cotton (कपास)</p>
-              <p class="text-dark text-start p-1">Cotton is a soft, fluffy fiber derived from the cotton plant and is commonly used to make textiles and clothing.</p>
-              <p class="p-2"><a class="btn btn-primary btn-lg buy-now">Not Available</a></p>
-            </div>
-          </div>
-
-        </div>
 
       </div>
     </section>
 
-    <section id="about" data-aos="zoom-in">
-      <div class="container" id="container-about">
-        <h1>About</h1>
+    <section id="about">
+      <div class="container" id="container-width">
         <br>
         Welcome to our website dedicated to the cultivation of high-quality fruits and vegetables. We specialize in growing a diverse range of fresh produce, including a variety of fruits and vegetables. Our commitment to sustainable and organic practices ensures that our crops are healthy, nutritious, and free from harmful chemicals. Explore our website to learn more about our farming methods, browse our selection of seasonal produce, and discover the benefits of incorporating fresh fruits and vegetables into your diet.
       </div>
     </section>
 
+
     <section id="contact">
-        <div class="container" id="container-contact" data-aos="fade-left">
-            <h1>Contact</h1>
-            <br>
-            <p>Feel free to contact us.</p>
+      <div class="container" id="container-width">
+        <h1>Contact</h1>
+        <br>
+        <p>Feel free to contact us.</p>
 
-            <form   action="https://formspree.io/f/mgejerrb"
-            method="POST">
-                <div class="mb-3 col-10">
-                    <label for="exampleInputName" class="form-label">Name</label>
-                    <input name="Name" type="text" class="form-control" id="exampleInputName">
-                  </div>
-                <div class="mb-3 col-10">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                </div>
-                <div class="mb-3 col-10">
-                  <label for="exampleInputTextArea" class="form-label">Message</label>
-                  <textarea name="Message" type="text" class="form-control" id="exampleInputTextArea" rows="2"></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary form-btn">Submit</button>
-              </form>
-
-        </div>
+        <form action="https://formspree.io/f/mgejerrb" method="POST">
+            <div class="mb-3 col-10">
+                <label for="exampleInputName" class="form-label">Name</label>
+                <input name="Name" type="text" class="form-control" id="exampleInputName">
+              </div>
+            <div class="mb-3 col-10">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3 col-10">
+              <label for="exampleInputTextArea" class="form-label">Message</label>
+              <textarea name="Message" type="text" class="form-control" id="exampleInputTextArea" rows="2"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary form-btn">Submit</button>
+          </form>
+      </div>
     </section>
+
+
+
 
     <section id="footer">
         <div class="container" id="container-footer">
-            <div class="footer-content" data-aos="fade-right">
+            <div class="footer-content">
                 <p id="credit">&copy;2023 Smart<span style="color: mediumseagreen; font-weight: bold;">Agro</span></p>
                 <div class="row">
                     <div class="col-sm-4">
@@ -232,8 +247,8 @@
         </div>
     </section>
 
-    <div class="bg-black text-center top">
-        <a class="btn btn-primary border-0 text-light bg-black" href="./index.html"><i class="bi bi-arrow-up"></i> Back to top</a>
+    <div class="bg-black text-end top">
+        <a class="btn btn-primary border-0 text-light bg-black" href="#"><i class="bi bi-arrow-up"></i> Back to top</a>
     </div>
 
 
