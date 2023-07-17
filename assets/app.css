@@ -83,7 +83,7 @@ a{
     margin-top: 0;
     margin-bottom: 0;
     /* background-image: linear-gradient(to left, #f4f4f4cd, rgb(247, 242, 236)); */
-    background-image: linear-gradient(to left, #b5c3eacd, rgb(247, 242, 236));
+    background-image: linear-gradient(to left, #b8c5ede7, rgb(247, 242, 236));
 }
 .dropdown-menu.show{
     background-color: rgb(247, 242, 236);
@@ -143,6 +143,7 @@ section{
     color: teal;
     /* background-color: mediumseagreen !important; */
     background-image: linear-gradient(to left, rgb(239, 190, 100), rgb(235, 235, 85)) !important;
+    border-bottom: 1px solid gray !important;
     transition: all 0.3s ease-in-out;
 }
 
