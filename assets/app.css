@@ -82,7 +82,8 @@ a{
 #contact{
     margin-top: 0;
     margin-bottom: 0;
-    background-image: linear-gradient(to left, #f4f4f4cd, rgb(247, 242, 236));
+    /* background-image: linear-gradient(to left, #f4f4f4cd, rgb(247, 242, 236)); */
+    background-image: linear-gradient(to left, #b5c3eacd, rgb(247, 242, 236));
 }
 .dropdown-menu.show{
     background-color: rgb(247, 242, 236);
@@ -99,7 +100,8 @@ section{
     padding: 200px 0.9%;
 }
 #container-width{
-    width: 60%;
+    /* width: 60%; */
+    width: 50%;
 }
 @media(max-width:576px){
     #container-width{
@@ -197,7 +199,37 @@ section{
     background-color: #666;
     color: white;
   } */
-
+  #search{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  @media(max-width: 576px){
+    #search{
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+  }
+  .search{
+    /* width: 50%; */
+    background-color: #ffffff1e !important; 
+    border-radius: 2rem !important;
+    padding: 0.5rem;
+  }
+  .btn-search{
+    /* background-color: #000; */
+    background-image: linear-gradient(to right, #23118e, #076757);
+    color: #ddd;
+    border-radius: 2rem;
+    margin-bottom: 0;
+    border: 0;
+  }
+  .btn-search:hover{
+    color: #ddd;
+    background-image: linear-gradient(to left, #23118e, #076757);
+    transition: all 0.5s ease-in-out;
+  }
   #container-filter{
     width: 60%;
   }
@@ -206,7 +238,6 @@ section{
         width: 100%;
     }
   }
-
   .card{
     background-color: rgba(246, 244, 241, 0.468) !important;
     box-shadow: 0 0 10px rgba(206, 206, 206, 0.315);
@@ -254,14 +285,22 @@ section{
         width: 94%;
     }
 }
-/* .form-control{
-    background-color: rgb(247, 242, 236);
-    border: none;
-} */
+.form-control{
+    /* background-color: rgb(247, 242, 236);
+    border: none; */
+    border: 1px solid #6969699e;
+}
+@media(max-width: 576px){
+    .contact-text{
+        text-align: center;
+    }
+}
 .form-btn{
-    color: #000;
+    /* color: #000; */
+    color: #ddd;
     border: 1px solid #6969699e;
     border-radius: 2rem;
+    background-image: linear-gradient(to right, #000, #000000cd)
 }
 .form-btn:hover{
     background-color: #000;
