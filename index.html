@@ -80,6 +80,19 @@
             <button class="btn btn-filter-color" onclick="filterSelection('other')">Others +</button>
           </div>
 
+          <div class="text-center" id="search">
+            <form class="d-flex" role="search">
+              <input class="form-control search me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-search" type="submit" onclick="myFunction()">Search</button>
+
+              <script>
+                function myFunction() {
+                  alert("Search function currently under construction..");
+                }
+                </script>
+            </form>
+          </div>
+
           <div class="row">
 
             <div class="col-sm-6 mb-3 mb-sm-0">
@@ -200,21 +213,21 @@
 
     <section id="contact">
       <div class="container" id="container-width">
-        <h1>Contact</h1>
+        <h1 class="text-center">Contact</h1>
         <br>
-        <p>Feel free to contact us.</p>
+        <p class="contact-text">Feel free to contact us.</p>
 
         <form action="https://formspree.io/f/mgejerrb" method="POST">
-            <div class="mb-3 col-10">
+            <div class="mb-3 col-sm">
                 <label for="exampleInputName" class="form-label">Name</label>
                 <input name="Name" type="text" class="form-control" id="exampleInputName">
               </div>
-            <div class="mb-3 col-10">
+            <div class="mb-3 col-sm">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
               <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3 col-10">
+            <div class="mb-3 col-sm">
               <label for="exampleInputTextArea" class="form-label">Message</label>
               <textarea name="Message" type="text" class="form-control" id="exampleInputTextArea" rows="2"></textarea>
             </div>
