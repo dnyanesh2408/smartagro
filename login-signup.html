@@ -64,15 +64,25 @@
                 <h1><span style="color: aliceblue; border-bottom: 1px solid gray;">Login</span></h1>
                 <br>
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput" required>Email address</label>
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"  required>
+                    <label for="floatingInput">Email address</label>
                   </div>
                   <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                     <label for="floatingPassword" required>Password</label>
                   </div>
                   <br>
-                  <a class="btn btn-primary btn-sm login-btn" style="border-radius: 2rem;" type="submit" role="button" href="./login-disabled.html">Login <i class="bi bi-box-arrow-in-right"></i></a>  <a class="btn btn-primary btn-sm login-btn" style="border-radius: 2rem;"  type="submit" role="button" href="./404.html">Signup <i class="bi bi-person-add"></i> </a>
+                  <!-- <button class="btn btn-primary btn-sm login-btn" style="border-radius: 2rem;" type="submit" role="button" onclick="setTimeout(submitForm, 3000);">Login <i class="bi bi-box-arrow-in-right"></i></button> -->
+
+                  <button class="btn btn-primary btn-sm login-btn" style="border-radius: 2rem;" type="submit" role="button" onclick="setTimeout(submitForm, 600);">Login <i class="bi bi-box-arrow-in-right"></i></button>
+                  
+                  <a class="btn btn-primary btn-sm login-btn" style="border-radius: 2rem;"  type="submit" role="button" href="./404.html">Signup <i class="bi bi-person-add"></i> </a>
+
+                  <script>
+                    function submitForm() {
+                      alert("smartagro/login/error\n\nSorry ! Due to maintence or update login is currently diabled.\nThanks !");
+                    }
+                    </script>
             </form>
             <br>
             <br>
@@ -81,6 +91,7 @@
             <p><a class="text-success"role="link" href="./index.html" style="font-weight: bold;"><i class="bi bi-arrow-left-short"></i> back</a></p>
         </div>
     </section>
+
 
     <section id="footer">
         <div class="container" id="container-footer">
