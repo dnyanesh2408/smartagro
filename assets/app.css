@@ -361,18 +361,26 @@ section{
     color: #000;
 } */
 #login{
-    /* background-image: url('https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    /* background-image: url('https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-image: url(https://images.pexels.com/photos/355853/pexels-photo-355853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url('https://images.pexels.com/photos/1353938/pexels-photo-1353938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url(https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(https://images.pexels.com/photos/796620/pexels-photo-796620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+
+    background-image: url('https://images.pexels.com/photos/767956/pexels-photo-767956.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .form-control{
-    background-color: #e8e8e8c2;
+    /* background-color: #e8e8e8c2; */
+    background-color: #e8e8e8eb;
     border-radius: 1rem;
     padding: 0.8rem;
 }
 .login-btn{
-    background: #e8e8e8c2;
+    /* background: #e8e8e8c2; */
+    background-color: #e8e8e8eb;
     color: #000 ;
 }
 .login-btn:hover{
